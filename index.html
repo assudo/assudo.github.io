@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Angad Labs Store</title>
+  
+    <!-- लिंक शेयर करने पर आइकन और डिस्क्रिप्शन दिखाने के लिए (Open Graph Tags) -->
+  <meta property="og:title" content="Angad Labs Store - Official Web App Store">
+  <meta property="og:description" content="अंगद लैब्स के सभी एजुकेशनल और स्मार्ट टूल्स ऐप्स एक ही जगह से चलाएं और इंस्टॉल करें।">
+  <meta property="og:image" content="https://cdn.jsdelivr.net/gh/Angadlabs/Angadlabs.github.io@main/assets/AngadLabsLogo.jpeg">
+  <meta property="og:type" content="website">
+
+
+  <!-- PWA Theme Color & Manifest -->
+  <meta name="theme-color" content="#0f172a">
+  <link rel="manifest" href="manifest.json">
+
+  <!-- यहाँ अपने स्टोर का मुख्य आइकन लिंक डालें (Store Favicon / Apple Icon) -->
+  <link rel="icon" type="https://cdn.jsdelivr.net/gh/Angadlabs/Angadlabs.github.io@main/assets/AngadLabsLogo.jpeg">
+  <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/Angadlabs/Angadlabs.github.io@main/assets/AngadLabsLogo.jpeg">
+
+  <!-- Google Fonts (Inter) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- 24x7 Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 1. TOP HEADER BAR -->
+  <header class="top-header">
+    <div class="dev-info">
+      <i class="fa-solid fa-code dev-icon"></i>
+      <span>Dev: <strong>Angad</strong></span>
+    </div>
+    <div class="company-badge">
+      <i class="fa-solid fa-bolt"></i>
+      <span>Powered by <strong>Angad Labs</strong></span>
+    </div>
+  </header>
+
+  <main class="main-container">
+
+    <!-- 2. PWA INSTALL BANNER (इंस्टॉल होने पर यह पूरा बॉक्स अपने आप छुप जाएगा) -->
+    <section id="pwaInstallBanner" class="pwa-banner">
+      <!-- यहाँ अपने स्टोर का आइकन लिंक डालें -->
+      <img 
+        id="storeLogo" 
+        src="https://cdn.jsdelivr.net/gh/Angadlabs/Angadlabs.github.io@main/assets/AngadLabsLogo.jpeg" 
+        alt="Angad Labs Store Logo" 
+        class="pwa-logo"
+      >
+      <div class="pwa-text">
+        <h2 class="pwa-title">Angad Labs Store</h2>
+        <p class="pwa-desc">सभी एजुकेशनल और टूल्स ऐप्स एक ही जगह पाएं।</p>
+      </div>
+      <button id="pwaInstallBtn" class="pwa-install-btn">
+        <i class="fa-solid fa-download"></i> Install
+      </button>
+    </section>
+
+    <!-- 3. POWERFUL SEARCH BAR -->
+    <section class="search-section">
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input 
+          type="text" 
+          id="searchInput" 
+          placeholder="ऐप का नाम सर्च करें (जैसे: Exam Sathi)..." 
+          autocomplete="off"
+        >
+        <button id="clearSearchBtn" class="clear-btn" title="Clear">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- 4. APP COUNT (Right Side) -->
+    <!-- 4. SHARE BUTTON (Left) & APP COUNT (Right) -->
+    <div class="count-bar">
+      <button id="shareStoreBtn" class="share-btn">
+        <i class="fa-solid fa-share-nodes"></i>
+        <span>Share Store</span>
+      </button>
+
+      <span id="appCountBadge" class="app-count">
+        <i class="fa-solid fa-layer-group"></i> Total Apps: <strong id="appCountNumber">0</strong>
+      </span>
+    </div>
+
+
+    <!-- 5. APP CARDS LIST -->
+    <section id="appListContainer" class="app-list">
+      <!-- ऐप्स के कार्ड्स जावास्क्रिप्ट से यहाँ अपने आप बनेंगे -->
+    </section>
+
+  </main>
+
+  <!-- 6. MODERN CUSTOM ALERT / POPUP MODAL (पुराने alert की जगह) -->
+  <div id="modernModal" class="modal-overlay">
+    <div class="modal-card">
+      <div class="modal-icon-wrap" id="modalIconWrap">
+        <i id="modalIcon" class="fa-solid fa-circle-info"></i>
+      </div>
+      <h3 id="modalTitle" class="modal-title">सूचना</h3>
+      <p id="modalMessage" class="modal-message">यहाँ संदेश दिखेगा।</p>
+      <div class="modal-actions" id="modalActions">
+        <button id="modalConfirmBtn" class="modal-btn primary-btn">ठीक है (OK)</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Exam Sathi",
+    "version": "v2.1.0",
+    "shortDesc": "छात्रों के लिए स्मार्ट क्विज़ और स्टडी प्रैक्टिस वेब ऐप।",
+    "icon": "https://cdn.jsdelivr.net/gh/Angadlabs/Angadlabs.github.io@main/assets/Examlogo.jpeg",
+    "url": "https://angadlabs.github.io/ExamSathi/"
+  },
+  {
+    "id": 2,
+    "name": "Angad Typing Pro",
+    "version": "v1.4.0",
+    "shortDesc": "हिंदी और इंग्लिश टाइपिंग स्पीड (WPM) व एक्यूरेसी टेस्टर।",
+    "icon": "https://cdn-icons-png.flaticon.com/512/2921/2921222.png",
+    "url": "https://example.com/typing-pro"
+  },
+  {
+    "id": 3,
+    "name": "Beat Maker Studio",
+    "version": "v1.0.5",
+    "shortDesc": "मोबाइल के लिए मल्टी-टच ड्रम पैड और म्यूजिक मेकर ऐप।",
+    "icon": "https://cdn-icons-png.flaticon.com/512/3659/3659784.png",
+    "url": "https://example.com/beat-maker"
+  }
+]
