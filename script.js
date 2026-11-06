@@ -142,7 +142,7 @@ function renderApps(appsArray) {
         src="${app.icon}" 
         alt="${app.name}" 
         class="app-icon"
-        onerror="this.src='https://cdn.jsdelivr.net/gh/Angadlabs/Angadlabs.github.io@main/assets/AngadLabsLogo.jpeg'"
+        onerror="this.src='https://cdn.jsdelivr.net/gh/assudo/assudo.github.io@main/assets/AngadLabsLogo.jpeg'"
       >
       <div class="app-details">
         <div class="app-title-row">
@@ -234,8 +234,8 @@ const shareStoreBtn = document.getElementById('shareStoreBtn');
 shareStoreBtn.addEventListener('click', async () => {
   // आपके स्टोर का लाइव लिंक (जिस पर क्लिक करके अगला यूजर डायरेक्ट ओपन करेगा)
   const storeUrl = window.location.href;
-  const shareTitle = 'Angad Labs Store';
-  const shareDescription = '🚀 Angad Labs Store पर हमारे सभी शानदार एजुकेशनल और टूल्स ऐप्स (जैसे Exam Sathi) एक ही जगह पाएं!\n\nअभी ओपन करने के लिए नीचे दिए गए लिंक पर क्लिक करें:\n';
+  const shareTitle = 'AS App Store';
+  const shareDescription = '🚀 AS App Store पर हमारे सभी शानदार एजुकेशनल और टूल्स ऐप्स (जैसे Exam Sathi) एक ही जगह पाएं!\n\nअभी ओपन करने के लिए नीचे दिए गए लिंक पर क्लिक करें:\n';
 
   if (navigator.share) {
     try {
