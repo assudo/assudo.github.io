@@ -1,7 +1,7 @@
 {
-  "name": "Angad Labs App Store",
+  "name": "AS App Store",
   "short_name": "Angad Store",
-  "description": "Official Web App Store by Angad Labs",
+  "description": "Official Web App Store by AS App Store",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#0f172a",
@@ -9,12 +9,12 @@
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "https://cdn.jsdelivr.net/gh/Angadlabs/Angadlabs.github.io@main/assets/AngadLabsLogo.jpeg",
+      "src": "https://cdn.jsdelivr.net/gh/assudo/assudo.github.io@main/assets/AngadLabsLogo.jpeg",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "https://cdn.jsdelivr.net/gh/Angadlabs/Angadlabs.github.io@main/assets/AngadLabsLogo.jpeg",
+      "src": "https://cdn.jsdelivr.net/gh/assudo/assudo.github.io@main/assets/AngadLabsLogo.jpeg",
       "sizes": "512x512",
       "type": "image/png"
     }
