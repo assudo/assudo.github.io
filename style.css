@@ -837,12 +837,14 @@ body:not(.dark-mode) .asgo-empty-sub {
   background: rgba(16, 42, 67, 0.92);
   border: 1px solid rgba(255, 255, 255, 0.14);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
-  max-width: 100%;
+  max-width: 360px;
+  min-width: 360px;
+  margin-bottom: 12px;
 }
 
 .asgo-install-logo {
-  width: 24px;
-  height: 24px;
+  width: 40px;
+  height: 40px;
   border-radius: 6px;
   object-fit: cover;
   flex-shrink: 0;
@@ -850,7 +852,7 @@ body:not(.dark-mode) .asgo-empty-sub {
 
 .asgo-install-name {
   flex: 1;
-  font-size: 13px;
+  font-size: 18px;
   font-weight: 700;
   color: #ffffff;
   white-space: nowrap;
@@ -862,7 +864,7 @@ body:not(.dark-mode) .asgo-empty-sub {
   border: none;
   border-radius: 8px;
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 700;
   background: #00bfa6;
   color: #0f172a;
