@@ -1,0 +1,23 @@
+{
+  "name": "asgo.online",
+  "short_name": "asgo.online",
+  "description": "asgo.online — Apps & Tools Hub by अंगद",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#102A43",
+  "theme_color": "#102A43",
+  "icons": [
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

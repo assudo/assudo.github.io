@@ -1,0 +1,884 @@
+*{margin:0px;
+  padding: 0px;
+  box-sizing: border-box;
+  user-select: none;
+  color: #FFFFFF;
+}
+
+body{margin:0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.applogo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* यदि पूरा बॉक्स भरना हो तो cover, पूरा लोगो दिखाना हो तो contain करें */
+    display: block;
+    border-radius: inherit;
+}
+
+
+
+/*Show user name enter box start*/
+#box1{
+  width: 100vw;
+  height: 100vh;
+  background-color: #102A43;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#app{
+  margin-top: 12px;
+  margin-bottom: 25px;
+ min-width: 360px;
+ max-width: 360px;
+ min-height: 40px;
+ max-height: 40px;
+ box-shadow: 0px 0px 10px #F5B942;
+ border-radius: 18px;
+  background-color: #102A43;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 4px;
+}
+
+#menubtn, #searchbtn{
+  padding: 6px;
+ min-width: 30px;
+ max-width: 30px;
+ min-height: 30px;
+ max-height: 30px;
+ box-shadow: 0px 0px 10px #000000;
+ border-radius: 50%;
+  background-color: #102A43;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#menubtn hr{
+ min-width: 20px;
+ max-width: 20px;
+ min-height: 3px;
+ max-height: 3px;
+  background-color: #94A3B8;
+  color: #FFFFFF;
+  border-radius: 10px;
+}
+
+.co1{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  min-width: 70%;
+ max-width: 70%;
+ min-height: 30px;
+ max-height: 30px;
+ box-shadow: 0px 0px 10px #000000;
+  background-color: #102A43;
+  color: #FFFFFF;
+  border-radius: 10px;
+  font-size: 23px;
+}
+
+#searchbtn{
+  font-size: 18px;
+  font-weight: bold;
+  justify-content: center;
+}
+
+#searchbox{
+  display: none;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+#appcardcontener, #toolcardcontener{
+  overflow-y: auto;
+  margin-bottom: 12px;
+ min-width: 370px;
+ max-width: 370px;
+ min-height: 550px;
+ max-height: 550px;
+ border-radius: 18px;
+  background-color: #102A43 transparent;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+box-shadow: 0px 0px 10px #F5B942 transparent;
+}
+#toolcardcontener{display: none;}
+
+.appcard, .appcardshadwo, #tab{
+  padding: 8px;
+ min-width: 360px;
+ max-width: 360px;
+ min-height: 100px;
+ max-height: 100px;
+ border-radius: 18px;
+  background-color: #102A43;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#tab{
+  padding-left: 48px;
+  padding-right: 48px;
+ min-height: 50px;
+ max-height: 50px;
+  background-color: #102A43 transparent;
+box-shadow: 0px 0px 10px #F5B942 transparent;
+}
+
+  #tab span{padding: 8px;
+ min-width: 60px;
+ max-width: 60px;
+ min-height: 40px;
+ max-height: 40px;
+ border-radius: 12px;
+  background-color: #102A43;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px #F5B942;
+  }
+
+.appcardshadwo{
+  min-width: 363px;
+ max-width: 363px;
+ min-height: 103px;
+ max-height: 103px;
+  margin-top: 15px;
+  padding: 0px;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(
+    120deg,
+    #ff00cc,
+    #7928ca,
+    #007bff,
+    #00e5ff,
+    #ff00cc
+  );
+  background-size: 300% 300%;
+  animation: premiumGradient 5s ease infinite;
+  box-shadow:
+    0 0 5px #7928ca,
+    0 0 10px #007bff;
+}
+
+.applogo{
+margin-right: auto;
+ min-width: 70px;
+ max-width: 70px;
+ min-height: 70px;
+ max-height: 70px;
+ box-shadow: 0px 0px 10px #000000;
+ border-radius: 12px;
+  background-color: #102A43;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 34px;
+  font-weight: bolder;
+  color: #4E00FF;
+}
+
+.appde{
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-right: 5px;
+ min-width: 215px;
+ max-width: 215px;
+ min-height: 100%;
+ max-height: 100%;
+ border-radius: 12px;
+  background-color: #102A43 transparent;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
+}
+
+.appname, .apppoint{
+  color: #102A43;
+ min-width: 100%;
+ max-width: 100%;
+ min-height: 30px;
+ max-height: 30px;
+ border-radius: 4px;
+ overflow-x: auto;
+ word-break: none;
+ text-wrap: nowrap;
+ font-size: 23px;
+ font-weight: bolder;
+  background-color: #00BFA6 transparent;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+.apppoint{
+ min-height: 35px;
+ max-height: 35px;
+ font-size: 15px;
+ color: #F5B942;
+}
+
+.appopenbtn{
+  color: #102A43;
+ min-width: 50px;
+ max-width: 50px;
+ min-height: 65px;
+ max-height: 65px;
+ box-shadow: 0px 0px 10px #000000;
+ border-radius: 50px;
+ border-top-left-radius: 0px;
+ border-bottom-left-radius: 0px;
+  background-color: #00BFA6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-box{
+  min-width: 360px;
+  max-width: 360px;
+  min-height: 600px;
+  max-height: 600px;
+  box-shadow: 0px 0px 10px #F5B942;
+  border-radius: 12px;
+  background-color: #102A43;
+  display: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 4px;
+  position: fixed;
+  top: 80px;
+  z-index: 999;
+}
+
+/* 360x600 Box Variables (Light Mode Default) */
+    .asgo-main-box {
+        --card-bg: #ffffff;
+        --card-secondary: #f8fafc;
+        --text-primary: #0f172a;
+        --text-secondary: #475569;
+        --accent-color: #4f46e5;
+        --border-color: #e2e8f0;
+        --toggle-bg: #cbd5e1;
+        --shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+
+        width: 360px;
+        height: 600px;
+        background-color: var(--card-bg);
+        border-radius: 24px;
+        border: 1px solid var(--border-color);
+        box-shadow: var(--shadow);
+        padding: 20px;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow-y: auto;
+        box-sizing: border-box;
+        font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+        transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+        min-width: 360px;
+  position: fixed;
+  top: 80px;
+  z-index: 999;
+    }
+
+    /* Dark Mode Variables (बॉक्स के अंदर और बाहर के लिए) */
+    .asgo-main-box.dark-mode,
+    body.dark-mode .asgo-main-box {
+        --card-bg: #1e293b;
+        --card-secondary: #0f172a;
+        --text-primary: #f8fafc;
+        --text-secondary: #94a3b8;
+        --accent-color: #6366f1;
+        --border-color: #334155;
+        --toggle-bg: #475569;
+        --shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+    }
+
+    .asgo-main-box * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    }
+
+    .asgo-main-box::-webkit-scrollbar {
+        width: 0px;
+    }
+
+    /* 1. Header Section */
+    .asgo-header {
+        text-align: center;
+        padding-bottom: 12px;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .asgo-site-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: rgba(99, 102, 241, 0.12);
+        color: var(--accent-color);
+        padding: 6px 14px;
+        border-radius: 50px;
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 0.3px;
+        margin-bottom: 8px;
+    }
+
+    .asgo-dev-name {
+        font-size: 13px;
+        color: var(--text-secondary);
+        font-weight: 500;
+    }
+
+    .asgo-dev-name span {
+        font-weight: 700;
+        background: linear-gradient(90deg, #4f46e5, #9333ea);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .asgo-main-box.dark-mode .asgo-dev-name span,
+    body.dark-mode .asgo-main-box .asgo-dev-name span {
+        background: linear-gradient(90deg, #818cf8, #c084fc);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    /* 2. Toggles Section */
+    .asgo-settings-group {
+        background-color: var(--card-secondary);
+        border: 1px solid var(--border-color);
+        border-radius: 16px;
+        padding: 12px 14px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        margin: 10px 0;
+    }
+
+    .asgo-setting-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .asgo-setting-info {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 13.5px;
+        font-weight: 600;
+        color: var(--text-primary);
+    }
+
+    .asgo-setting-info i {
+        width: 28px;
+        height: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        background: rgba(99, 102, 241, 0.12);
+        color: var(--accent-color);
+        font-size: 13px;
+    }
+
+    /* Premium Toggle Switch */
+    .asgo-switch {
+        position: relative;
+        display: inline-block;
+        width: 44px;
+        height: 24px;
+    }
+
+    .asgo-switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .asgo-slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background-color: var(--toggle-bg);
+        transition: .3s;
+        border-radius: 34px;
+    }
+
+    .asgo-slider:before {
+        position: absolute;
+        content: "";
+        height: 18px;
+        width: 18px;
+        left: 3px;
+        bottom: 3px;
+        background-color: white;
+        transition: .3s;
+        border-radius: 50%;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+
+    .asgo-switch input:checked + .asgo-slider {
+        background-color: var(--accent-color);
+    }
+
+    .asgo-switch input:checked + .asgo-slider:before {
+        transform: translateX(20px);
+    }
+
+    /* 3. Description Box */
+    .asgo-desc-box {
+        background-color: var(--card-secondary);
+        border: 1px solid var(--border-color);
+        border-radius: 16px;
+        padding: 12px 14px;
+        margin-bottom: 10px;
+    }
+
+    .asgo-desc-title {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.6px;
+        color: var(--accent-color);
+        font-weight: 700;
+        margin-bottom: 4px;
+    }
+
+    .asgo-desc-text {
+        font-size: 12.5px;
+        line-height: 1.5;
+        color: var(--text-secondary);
+    }
+
+    /* 4. Direct Gmail Contact Button */
+    .asgo-contact-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        width: 100%;
+        padding: 12px;
+        background: linear-gradient(135deg, var(--accent-color), #7c3aed);
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 13.5px;
+        font-weight: 600;
+        border-radius: 14px;
+        box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        margin-bottom: 10px;
+    }
+
+    .asgo-contact-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(79, 70, 229, 0.45);
+    }
+
+    .asgo-contact-btn:active {
+        transform: scale(0.98);
+    }
+
+    /* 5. Legal Box */
+    .asgo-legal-box {
+        background-color: var(--card-secondary);
+        border: 1px solid var(--border-color);
+        border-radius: 14px;
+        padding: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .asgo-legal-link {
+        text-decoration: none;
+        color: var(--text-secondary);
+        font-size: 12px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding: 4px 8px;
+        border-radius: 8px;
+        transition: all 0.2s ease;
+    }
+
+    .asgo-legal-link:hover {
+        color: var(--accent-color);
+        background: rgba(99, 102, 241, 0.1);
+    }
+
+    .asgo-divider {
+        width: 1px;
+        height: 16px;
+        background-color: var(--border-color);
+    }
+
+/* Action Buttons Wrapper (Gmail + YouTube) */
+.asgo-action-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.asgo-action-group .asgo-contact-btn {
+    margin-bottom: 0;
+    flex: 1;
+    padding: 11px 8px;
+    font-size: 13px;
+}
+
+/* YouTube Button Style */
+.asgo-yt-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    flex: 1;
+    padding: 11px 8px;
+    background: linear-gradient(135deg, #ff0000, #cc0000);
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(255, 0, 0, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.asgo-yt-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(255, 0, 0, 0.4);
+}
+
+.asgo-yt-btn:active {
+    transform: scale(0.98);
+}
+
+/*Show user name enter box end*/
+
+/*animation code start*/
+@keyframes premiumGradient {
+  0% {
+    background-position: 0% 50%;
+    filter: brightness(1);
+  }
+  50% {
+    background-position: 100% 50%;
+    filter: brightness(1.3);
+  }
+  100% {
+    background-position: 0% 50%;
+    filter: brightness(1);
+  }
+}
+
+.appopenbtn:active, #searchbtn:active, #menubtn:active{
+  animation: gradientMove 3s ease infinite;
+  box-shadow:
+    0 0 4px #ff00cc,
+    0 0 10px #7928ca,
+    0 0 20px #007bff;
+  transform: translateY(-3px);
+}
+/*animation code end*/
+
+/*search input ka cross ❌ ka design ke liye*/
+#searchbox::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+    /* सफेद रंग (%23ffffff) और थोड़ा मोटा stroke-width='3.2' */
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'><line x1='18' y1='6' x2='6' y2='18'></line><line x1='6' y1='6' x2='18' y2='18'></line></svg>");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+
+
+
+/* ================= बाक़ी हिस्सों का LIGHT MODE CSS ================= */
+
+
+
+
+/* ================= LIGHT MODE (सभी का BG सफेद, Text काला) ================= */
+
+body.light-mode,
+body.light-mode *,
+body:not(.dark-mode),
+body:not(.dark-mode) * {
+    color: #000000 !important;
+}
+
+body.light-mode,
+body.light-mode #box1,
+body.light-mode #app,
+body.light-mode #menubtn,
+body.light-mode #searchbtn,
+body.light-mode .co1,
+body.light-mode #searchbox,
+body.light-mode .appcard,
+body.light-mode .applogo,
+body.light-mode #tab span,
+body:not(.dark-mode),
+body:not(.dark-mode) #box1,
+body:not(.dark-mode) #app,
+body:not(.dark-mode) #menubtn,
+body:not(.dark-mode) #searchbtn,
+body:not(.dark-mode) .co1,
+body:not(.dark-mode) #searchbox,
+body:not(.dark-mode) .appcard,
+body:not(.dark-mode) .applogo,
+body:not(.dark-mode) #tab{
+    background-color: #ffffff !important;
+}
+
+body:not(.dark-mode) #tab span{
+background-color: #ffffff !important;
+box-shadow: 0px 0px 10px #000000;
+}
+
+/* Menu Box (.asgo-main-box) के अंदर भी BG सफेद और Text काला */
+body.light-mode .asgo-main-box,
+body.light-mode .asgo-main-box .asgo-settings-group,
+body.light-mode .asgo-main-box .asgo-desc-box,
+body.light-mode .asgo-main-box .asgo-legal-box,
+body:not(.dark-mode) .asgo-main-box,
+body:not(.dark-mode) .asgo-main-box .asgo-settings-group,
+body:not(.dark-mode) .asgo-main-box .asgo-desc-box,
+body:not(.dark-mode) .asgo-main-box .asgo-legal-box {
+    background-color: #ffffff !important;
+}
+
+/* जो बटन/आइकन रंगीन हैं, उनका टेक्स्ट सफेद ही रहे ताकि साफ़ दिखे */
+body.light-mode .appopenbtn,
+body.light-mode .asgo-contact-btn,
+body.light-mode .asgo-yt-btn,
+body:not(.dark-mode) .appopenbtn,
+body:not(.dark-mode) .asgo-contact-btn,
+body:not(.dark-mode) .asgo-yt-btn {
+    color: #ffffff !important;
+}
+
+/* Search Cross (×) Light Mode में काला */
+body.light-mode #searchbox::-webkit-search-cancel-button,
+body:not(.dark-mode) #searchbox::-webkit-search-cancel-button {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000000' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'><line x1='18' y1='6' x2='6' y2='18'></line><line x1='6' y1='6' x2='18' y2='18'></line></svg>") !important;
+}
+
+
+
+
+
+
+.asgo-share-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 11px 12px;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #00bfa6, #0284c7);
+  color: #ffffff;
+  font-size: 13.5px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.28);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin-bottom: 8px;
+}
+
+.asgo-share-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(2, 132, 199, 0.4);
+}
+
+.asgo-share-btn:active {
+  transform: scale(0.98);
+}
+
+.asgo-share-msg {
+  min-height: 18px;
+  font-size: 12px;
+  text-align: center;
+  font-weight: 600;
+  color: #00bfa6;
+  margin-bottom: 8px;
+}
+
+body.light-mode .asgo-share-msg,
+body:not(.dark-mode) .asgo-share-msg {
+  color: #0284c7 !important;
+}
+
+
+
+
+
+
+
+/* Search में कुछ न मिलने पर दिखने वाला प्यारा सा Empty Box */
+.asgo-empty-state {
+  width: 90%;
+  margin: 40px auto;
+  padding: 24px 18px;
+  border-radius: 18px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px dashed rgba(245, 185, 66, 0.55);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.asgo-empty-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(0, 191, 166, 0.15);
+  color: #00bfa6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+.asgo-empty-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.asgo-empty-sub {
+  font-size: 12.5px;
+  color: #cbd5e1;
+  line-height: 1.45;
+}
+
+/* Light Mode में Empty Box का रंग */
+body.light-mode .asgo-empty-state,
+body:not(.dark-mode) .asgo-empty-state {
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+body.light-mode .asgo-empty-title,
+body:not(.dark-mode) .asgo-empty-title {
+  color: #0f172a !important;
+}
+
+body.light-mode .asgo-empty-sub,
+body:not(.dark-mode) .asgo-empty-sub {
+  color: #475569 !important;
+}
+
+
+
+
+
+
+/*PWS web App install patti start */
+.asgo-install-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 12px;
+  background: rgba(16, 42, 67, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+  max-width: 100%;
+}
+
+.asgo-install-logo {
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.asgo-install-name {
+  flex: 1;
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.asgo-install-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  background: #00bfa6;
+  color: #0f172a;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+/* Light Mode में पतली पट्टी का रंग */
+body.light-mode .asgo-install-bar,
+body:not(.dark-mode) .asgo-install-bar {
+  background: #ffffff;
+  border-color: #cbd5e1;
+}
+
+body.light-mode .asgo-install-name,
+body:not(.dark-mode) .asgo-install-name {
+  color: #0f172a;
+}
+/*PWS web App install patti end */

@@ -1,0 +1,14 @@
+[
+  {
+    "logo": "Rawat",
+    "name": "Calculator",
+    "point": "best Calculator",
+    "url": "https://example.com/calculator"
+  },
+  {
+    "logo": "AGE",
+    "name": "Age Calculator",
+    "point": "Calculate exact age easily",
+    "url": "https://example.com/age-calc"
+  }
+]
