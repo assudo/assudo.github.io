@@ -197,8 +197,8 @@ function menu() {
     });
 
     // दोनों JSON फाइल्स CDN से लोड करें (अगर किसी फ़ोल्डर में हों तो बीच में फ़ोल्डर का नाम लिखें, जैसे /data/app.json)
-    loadCards('https://cdn.jsdelivr.net/gh/assudo/assudo.github.io/pp.json', appContainer, 'pp.json');
-    loadCards('https://cdn.jsdelivr.net/gh/assudo/assudo.github.io/ool.json', toolContainer, 'ool.json');
+    loadCards('https://cdn.jsdelivr.net/gh/assudo/assudo.github.io/app.json', appContainer, 'app.json');
+    loadCards('https://cdn.jsdelivr.net/gh/assudo/assudo.github.io/tool.json', toolContainer, 'tool.json');
 })();
 
 
